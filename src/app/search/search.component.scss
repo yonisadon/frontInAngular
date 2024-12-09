@@ -1,0 +1,45 @@
+.search-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* שימוש ב-flexbox */
+    align-items: center; /* יישור אנכי למרכז */
+}
+
+#inputContainer {
+    margin-right: 10px; /* ריווח בין שדה החיפוש לכפתור */
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.search-container label {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.search-container select, .search-container button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3; /* צבע רקע כחול בהיר בעת לחיצה */
+}
+
+.search-container select {
+    background-color: #fff;
+    color: #000;
+}
