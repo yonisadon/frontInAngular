@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './home/home.component';
+import { SearchComponent } from './shared/components/search/search.component';
+import { ButtonBarComponent } from './shared/components/button-bar/button-bar.component';
 
 
 @Component({
@@ -7,8 +8,11 @@ import { HomeComponent } from './home/home.component';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [HomeComponent]// הוספת HomeComponent
-})
+  imports: [
+    SearchComponent,
+    ButtonBarComponent
+  ],
+  })
 export class AppComponent {
   title = 'matchmaking-frontend';
 }
