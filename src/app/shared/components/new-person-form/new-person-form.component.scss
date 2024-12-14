@@ -1,0 +1,110 @@
+/* סגנון עבור החלון הקופץ */
+.modal-title {
+   text-align: center; /* יישור למרכז */
+   margin-bottom: 20px; /* מרווח תחתון */
+}
+.modals-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.modal {
+
+    z-index: 9999; /* ערך גבוה מאוד כדי לוודא שהמודל תמיד יהיה מעל */
+
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 80vh; /* הגבלת גובה המודאל לגובה של 80% מהחלון */
+    overflow-y: auto; /* אם התוכן עובר את הגבול, יצא פס גלילה */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-group textarea#menSeeking {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+    height: 80px; /* גובה רב-שורות */
+    resize: vertical; /* לאפשר שינוי גובה */
+}
+.form-group textarea#womenSeeking {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+    height: 80px; /* גובה רב-שורות */
+    resize: vertical; /* לאפשר שינוי גובה */
+}
+.form-group  {
+    width: 100%; /* שדה המלל יתפוס את כל הרוחב */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right; /* טקסט מימין לשמאל */
+    height: 80px; /* גובה שדה המלל יותר גדול משאר השדות */
+}
+
+.form-group label {
+    margin-left: 10px;
+    text-align: right;
+    width: 100px; /* התאם לפי הצורך */
+}
+
+.form-group input, .form-group select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.modal-content button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}

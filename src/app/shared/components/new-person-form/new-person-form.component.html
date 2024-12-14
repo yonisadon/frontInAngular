@@ -1,0 +1,215 @@
+<!-- המודל של גברים -->
+<div id="menModal" class="modal">
+  <div class="modal-content">
+    <form id="menForm">
+      <h2 class="modal-title">טופס הוספת גבר</h2>
+      <div class="form-group">
+        <label for="menStatus">:סטטוס</label>
+        <select id="menStatus">
+          <option></option>
+          <option value="רווק/ה">רווק/ה</option>
+          <option value="גרוש/ה">גרוש/ה</option>
+          <option value="אלמן/ה">אלמן/ה</option>
+          <option value="נשוי/אה">נשוי/אה</option>
+          <option value="לא רלוונטי">לא רלוונטי</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="menStyle">:סגנון</label>
+        <select id="menStyle">
+          <option></option>
+          <option value="חרדי/ת ספרדי/ת">חרדי/ת ספרדי/ת</option>
+          <option value="חרדי/ת אשכנזי/ת">חרדי/ת אשכנזי/ת</option>
+          <option value="חרדי/ת">חרדי/ת</option>
+          <option value="חרדי/ת-מודרני">חרדי/ת-מודרני</option>
+          <option value="דתי/יה">דתי/יה</option>
+          <option value="דתי/יה לאומי/ת">דתי/יה לאומי/ת</option>
+          <option value="חבדניק/ית">חבדניק/ית</option>
+          <option value="ברסלב/ית">ברסלב/ית</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="menFirstName">:שם פרטי</label>
+        <input type="text" id="menFirstName" placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label for="menLastName">:שם משפחה</label>
+        <input type="text" id="menLastName" placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <label for="dateOfBirthMen">:תאריך לידה</label>
+        <input type="date" id="dateOfBirthMen" name="dateOfBirthMen">
+      </div>
+      <div class="form-group">
+        <label for="menAge">:גיל</label>
+        <input type="text" id="menAge" name="menAge" readonly>
+      </div>
+      <div class="form-group">
+        <label for="menHeight">:גובה</label>
+        <input type="number" id="menHeight" placeholder="Height">
+      </div>
+      <div class="form-group">
+        <label for="menLocation">:מיקום</label>
+        <input type="text" id="menLocation"  placeholder="לדוגמה: אשקלון, דרום">
+      </div>
+      <div class="form-group">
+        <label for="menCommunity">:עדה</label>
+        <input type="text" id="menCommunity">
+      </div>
+      <div class="form-group">
+        <label for="menHeadCovering">:כיסוי ראש/מטפחת</label>
+        <select id="menHeadCovering">
+          <option></option>
+          <option value="מטפחת">מטפחת</option>
+          <option value="פאה">פאה</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="menDevice">:מכשיר</label>
+        <select id="menDevice">
+          <option></option>
+          <option value="מכשיר כשר">מכשיר כשר</option>
+          <option value="מכשיר לא כשר">מכשיר לא כשר</option>
+          <option value="מכשיר מסונן">מכשיר מסונן</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="menPhone">טלפון</label>
+        <input type="text" id="menPhone" placeholder="טלפון">
+      </div>
+      <div class="form-group">
+        <label for="menWork">:עבודה</label>
+        <input type="text" id="menWork">
+      </div>
+      <div class="form-group">
+        <label for="menStudies">:לימודים</label>
+        <input type="text" id="menStudies">
+      </div>
+      <div class="form-group">
+        <label for="menSeeking">:מלל חופשי</label>
+        <textarea id="menSeeking" placeholder="Seeking"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="profilePictureMen">תמונה ראשית:</label>
+        <input type="file" id="profilePictureMen" name="profilePicture" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label for="additionalPictureMen">תמונה נוספת:</label>
+        <input type="file" id="additionalPictureMen" name="additionalPicture" accept="image/*">
+      </div>
+      <button type="button" (click)="closeModalA('modalId')">סגור</button>
+
+<!--      <button (click)="closeModalA('modalId')">סגור</button>-->
+      <button (click)="saveMenData()">שמור גבר</button>
+<!--      <button type="button" onclick="closeModalA('menModal')">סגור</button>-->
+<!--      <button type="button" onclick="saveMenData()">שמור</button>-->
+    </form>
+  </div>
+</div>
+
+<!-- המודל של נשים -->
+<div id="womenModal" class="modal">
+  <div class="modal-content">
+    <form id="womenForm">
+      <h2 class="modal-title">טופס הוספת אישה</h2>
+      <div class="form-group">
+        <label for="womenStatus">:סטטוס</label>
+        <select id="womenStatus">
+          <option></option>
+          <option value="רווק/ה">רווק/ה</option>
+          <option value="גרוש/ה">גרוש/ה</option>
+          <option value="אלמן/ה">אלמן/ה</option>
+          <option value="נשוי/אה">נשוי/אה</option>
+          <option value="לא רלוונטי">לא רלוונטי</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="womenStyle">:סגנון</label>
+        <select id="womenStyle">
+          <option></option>
+          <option value="חרדי/ת ספרדי/ת">חרדי/ת ספרדי/ת</option>
+          <option value="חרדי/ת אשכנזי/ת">חרדי/ת אשכנזי/ת</option>
+          <option value="חרדי/ת">חרדי/ת</option>
+          <option value="חרדי/ת-מודרני">חרדי/ת-מודרני</option>
+          <option value="דתי/יה">דתי/יה</option>
+          <option value="דתי/יה לאומי/ת">דתי/יה לאומי/ת</option>
+          <option value="חבדניק/ית">חבדניק/ית</option>
+          <option value="ברסלב/ית">ברסלב/ית</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="womenFirstName">:שם פרטי</label>
+        <input type="text" id="womenFirstName" placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label for="womenLastName">:שם משפחה</label>
+        <input type="text" id="womenLastName" placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <label for="dateOfBirthWomen">:תאריך לידה</label>
+        <input type="date" id="dateOfBirthWomen" name="dateOfBirthWomen">
+      </div>
+      <div class="form-group">
+        <label for="womenAge">:גיל</label>
+        <input type="text" id="womenAge" name="womenAge" readonly>
+      </div>
+      <div class="form-group">
+        <label for="womenHeight">:גובה</label>
+        <input type="number" id="womenHeight" placeholder="Height">
+      </div>
+      <div class="form-group">
+        <label for="womenLocation">:מיקום</label>
+        <input type="text" id="womenLocation"  placeholder="לדוגמה: אשקלון, דרום">
+      </div>
+      <div class="form-group">
+        <label for="womenCommunity">:עדה</label>
+        <input type="text" id="womenCommunity">
+      </div>
+      <div class="form-group">
+        <label for="womenHeadCovering">:כיסוי ראש/מטפחת</label>
+        <select id="womenHeadCovering">
+          <option></option>
+          <option value="מטפחת">מטפחת</option>
+          <option value="פאה">פאה</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="womenDevice">:מכשיר</label>
+        <select id="womenDevice">
+          <option></option>
+          <option value="מכשיר כשר">מכשיר כשר</option>
+          <option value="מכשיר לא כשר">מכשיר לא כשר</option>
+          <option value="מכשיר מסונן">מכשיר מסונן</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="womenPhone">טלפון</label>
+        <input type="text" id="womenPhone" placeholder="טלפון">
+      </div>
+      <div class="form-group">
+        <label for="womenWork">:עבודה</label>
+        <input type="text" id="womenWork">
+      </div>
+      <div class="form-group">
+        <label for="womenStudies">:לימודים</label>
+        <input type="text" id="womenStudies">
+      </div>
+      <div class="form-group">
+        <label for="womenSeeking">:מלל חופשי</label>
+        <textarea id="womenSeeking" placeholder="Seeking"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="profilePictureWomen">תמונה ראשית:</label>
+        <input type="file" id="profilePictureWomen" name="profilePicture" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label for="additionalPictureWomen">תמונה נוספת:</label>
+        <input type="file" id="additionalPictureWomen" name="additionalPicture" accept="image/*">
+      </div>
+      <button (click)="closeModalA('modalId')">סגור</button>
+
+<!--      <button type="button" onclick="closeModalA('womenModal')">סגור</button>-->
+      <button type="button" onclick="saveWomenData()">שמור</button>
+    </form>
+  </div>
+</div>
